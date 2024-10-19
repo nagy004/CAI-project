@@ -1,0 +1,12 @@
+aws_region        = "us-east-1"
+vpc_cidr_block    = "10.0.0.0/16"
+ami               = "ami-0c55b159cbfafe1f0" # Update with the correct AMI ID
+instance_type     = "t2.micro"
+allocated_storage  = 20
+storage_type      = "gp2"
+engine            = "mysql"
+engine_version    = "8.0"
+db_instance_class = "db.t3.micro"
+db_username       = "admin" # Change as necessary
+db_password       = "password" # Change as necessary
+db_name           = "mydatabase"

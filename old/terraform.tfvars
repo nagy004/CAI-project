@@ -1,0 +1,10 @@
+region             = "us-east-1"
+instance_type      = "t2.micro"
+frontend_ami       = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20230711"
+backend_ami        = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20230711"
+db_username        = "admin"
+db_password        = "YourSecurePassword123!"  # Change to a secure password
+db_instance_class  = "db.t3.micro"
+frontend_instance_volume_size = 8
+backend_instance_volume_size  = 8
+allocated_storage   = 20
