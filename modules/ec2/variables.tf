@@ -10,9 +10,9 @@ variable "subnet_id" {
   description = "Subnet ID for the instance"
 }
 
-variable "security_group_id" {
-  description = "List of security group IDs"
-  type        = list(string)  # Change to list of strings
+variable "SG-id" {
+    type = string
+  
 }
 
 variable "instance_name" {

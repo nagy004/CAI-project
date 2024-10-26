@@ -38,9 +38,9 @@ variable "subnet_group_id" {
   description = "Subnet group for the RDS"
 }
 
-variable "security_group_id" {
-  description = "List of security group IDs for the RDS instance"
-  type        = list(string)  # Ensure this is a list of strings
+variable "Nagy-DB-security_group_id" {
+   type = string
+
 }
 
 variable "final_snapshot_identifier" {

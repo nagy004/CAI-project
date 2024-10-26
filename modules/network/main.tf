@@ -47,7 +47,7 @@ resource "aws_security_group" "nagy_db_sg" {
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    # security_groups = [aws_security_group.nagy_sg]  # Allow traffic from backend_sg
+    security_groups = [aws_security_group.nagy_sg.id]  # Allow traffic from backend_sg
   }
 
   egress {

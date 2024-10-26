@@ -9,6 +9,6 @@ resource "aws_db_instance" "mysql" {
   skip_final_snapshot = true
 
   db_subnet_group_name = var.subnet_group_id
-  vpc_security_group_ids = var.security_group_id
+  vpc_security_group_ids = [var.Nagy-DB-security_group_id]
 }
 
