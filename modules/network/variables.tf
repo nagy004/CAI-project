@@ -2,16 +2,31 @@ variable "cidr_block" {
   description = "CIDR block for the VPC"
 }
 
-variable "availability_zone" {
-  description = "Availability zone for the subnet"
-  default     = "us-east-1a" # Update as needed
+variable "availability_zones" {
+  description = "List of availability zones"
+  type        = list(string)
+  default     = ["us-east-1a", "us-east-1b"]
 }
 
-variable "availability_zone-2" {
-  description = "Availability zone for the peivate subnet"
-  default     = "us-east-1b" # Update as needed
+variable "public_subnet_cidrs" {
+  description = "List of CIDR blocks for public subnets"
+  type        = list(string)
+  default     = ["10.0.1.0/24"]
 }
-# variable "security_group_id" {
-#   description = "List of security group IDs"
-#   type        = list(string)  # Change to list of strings
+
+variable "private_subnet_cidrs" {
+  description = "List of CIDR blocks for private subnets"
+  type        = list(string)
+  default     = ["10.0.2.0/24"]
+}
+
+
+
+
+
+# variable "availability_zones" {
+#   description = "List of availability zones"
+#   type        = list(string)
+#   default     = ["us-east-1a", "us-east-1b"]
 # }
+

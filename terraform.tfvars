@@ -1,6 +1,6 @@
 aws_region        = "us-east-1"
 vpc_cidr_block    = "10.0.0.0/16"
-ami               = "ami-0c55b159cbfafe1f0" # Update with the correct AMI ID
+ami               = "ami-0c55b159cbfafe1f0" 
 instance_type     = "t2.micro"
 allocated_storage  = 20
 storage_type      = "gp2"

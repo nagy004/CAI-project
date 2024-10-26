@@ -11,7 +11,7 @@ variable "vpc_cidr_block" {
 
 variable "ami" {
   description = "AMI ID for Ubuntu 22.04"
-  default     = "ami-0c55b159cbfafe1f0" # Update with the correct AMI ID
+  default     = "ami-0c55b159cbfafe1f0" 
 }
 
 variable "instance_type" {
